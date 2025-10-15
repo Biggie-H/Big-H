@@ -1,4 +1,3 @@
-
-title: About Big H
+title: About BIG H
 body: |
-  Welcome to Big H's musical journey. Here you'll find music releases, updates, and more!
+  Big H is an artist sharing unreleased music, lyric videos and the journey.
