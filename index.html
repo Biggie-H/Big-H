@@ -87,7 +87,6 @@
       box-shadow: 0 0 15px #ff004c, 0 0 25px #00ff88;
     }
 
-    /* Gallery */
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -136,7 +135,6 @@
       animation: neonFade 2.5s infinite ease-in-out;
     }
 
-    /* Vibes Section */
     .vibes {
       display: flex;
       flex-wrap: wrap;
@@ -163,6 +161,26 @@
       height: 215px;
       border: none;
       border-radius: 8px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      border: 2px solid #ff004c;
+      border-radius: 25px;
+      color: #000;
+      background: #00ff88;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #ff004c;
+      color: #fff;
+      border-color: #00ff88;
+      box-shadow: 0 0 20px #ff004c, 0 0 25px #00ff88;
     }
   </style>
 </head>
@@ -198,16 +216,21 @@
     <h2>Vibes Section</h2>
     <div class="vibes">
       <div class="vibe-item">
-        <iframe src="https://www.youtube.com/embed/deymr-YO9a4?si=FxWXFAAjwMYMEvV_"
-          title="Big H Snippet 1" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/LPA6P_ujYv0?si=yeMu5hLLc0yLI5Vy"
+          title="I Watch The Moon" allowfullscreen></iframe>
+        <a href="I watch the moon.mp3" download class="download-btn">Save the Vibe 🎧</a>
       </div>
+
       <div class="vibe-item">
-        <iframe src="https://www.youtube.com/embed/exyEG7b634M?si=-KTxR49eLGiwN0MW"
-          title="Big H Snippet 2" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/kxf7i1mJ9XI?si=ZcaVb8_NGH9DYpKn"
+          title="New You" allowfullscreen></iframe>
+        <a href="New You.mp3" download class="download-btn">Save the Vibe 🎧</a>
       </div>
+
       <div class="vibe-item">
-        <iframe src="https://www.youtube.com/embed/3cABihFzuKc?si=8D5F796-qq2XTqJf"
-          title="Big H Snippet 3" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tNagfSf33L0?si=juK2JL-lZzdvujgc"
+          title="3AM & Nowhere To Go" allowfullscreen></iframe>
+        <a href="3am & Nowhere to go.mp3" download class="download-btn">Save the Vibe 🎧</a>
       </div>
     </div>
   </section>
