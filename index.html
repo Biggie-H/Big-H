@@ -10,6 +10,19 @@
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Big H</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#snippets">Snippets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero -->
   <section id="hero" class="section hero-section">
     <div class="overlay"></div>
@@ -71,12 +84,22 @@
   </footer>
 
   <script>
-    // smooth scroll
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
       anchor.addEventListener('click',function(e){
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
       });
+    });
+
+    // Change navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
     });
   </script>
 </body>
