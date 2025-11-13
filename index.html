@@ -163,25 +163,50 @@
       border-radius: 8px;
     }
 
+    /* Download Section */
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .download-track {
+      background: #111;
+      border-radius: 12px;
+      width: 320px;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 0 10px #00ff8833;
+      transition: all 0.3s ease;
+    }
+
+    .download-track:hover {
+      box-shadow: 0 0 25px #ff004c, 0 0 30px #00ff88;
+      transform: scale(1.02);
+    }
+
     .download-btn {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.7rem 1.4rem;
-      border: 2px solid #ff004c;
+      border: 2px solid #00ff88;
       border-radius: 25px;
-      color: #000;
-      background: #00ff88;
+      color: #00ff88;
+      background: transparent;
       font-weight: bold;
       text-decoration: none;
       transition: all 0.3s ease;
     }
 
     .download-btn:hover {
-      background: #ff004c;
-      color: #fff;
-      border-color: #00ff88;
-      box-shadow: 0 0 20px #ff004c, 0 0 25px #00ff88;
+      background: #00ff88;
+      color: #000;
+      border-color: #ff004c;
+      box-shadow: 0 0 20px #00ff88, 0 0 25px #ff004c;
     }
+
   </style>
 </head>
 
@@ -192,13 +217,14 @@
       <a href="#about">About</a>
       <a href="#vibes">Vibes</a>
       <a href="#gallery">Gallery</a>
+      <a href="#downloads">Downloads</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="hero">
     <h2 class="glow-text">Angel with a Set of Horns</h2>
-    <p class="tagline">Born to flip sounds from Joburg to the world 🌍</p>
+    <p class="tagline">Born to flip sounds from Kwamhlanga to the world 🌍</p>
   </section>
 
   <section id="about">
@@ -217,19 +243,37 @@
     <div class="vibes">
       <div class="vibe-item">
         <iframe src="https://www.youtube.com/embed/LPA6P_ujYv0?si=yeMu5hLLc0yLI5Vy"
-          title="I Watch The Moon" allowfullscreen></iframe>
-        <a href="I watch the moon.mp3" download class="download-btn">Save the Vibe 🎧</a>
+          title="Snippet 1" allowfullscreen></iframe>
       </div>
 
       <div class="vibe-item">
         <iframe src="https://www.youtube.com/embed/kxf7i1mJ9XI?si=ZcaVb8_NGH9DYpKn"
-          title="New You" allowfullscreen></iframe>
-        <a href="New You.mp3" download class="download-btn">Save the Vibe 🎧</a>
+          title="Snippet 2" allowfullscreen></iframe>
       </div>
 
       <div class="vibe-item">
         <iframe src="https://www.youtube.com/embed/tNagfSf33L0?si=juK2JL-lZzdvujgc"
-          title="3AM & Nowhere To Go" allowfullscreen></iframe>
+          title="Snippet 3" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads">
+    <h2>Downloads</h2>
+    <div class="downloads">
+      <div class="download-track">
+        <h3>I Watch The Moon</h3>
+        <a href="I watch the moon.mp3" download class="download-btn">Save the Vibe 🎧</a>
+      </div>
+
+      <div class="download-track">
+        <h3>New You</h3>
+        <a href="New You.mp3" download class="download-btn">Save the Vibe 🎧</a>
+      </div>
+
+      <div class="download-track">
+        <h3>3AM & Nowhere To Go</h3>
         <a href="3am & Nowhere to go.mp3" download class="download-btn">Save the Vibe 🎧</a>
       </div>
     </div>
