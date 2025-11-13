@@ -87,6 +87,7 @@
       box-shadow: 0 0 15px #ff004c, 0 0 25px #00ff88;
     }
 
+    /* Gallery */
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -99,13 +100,15 @@
       width: 280px;
       height: 280px;
       border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 1.4rem;
-      text-shadow: 0 0 10px #ff004c;
+      overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #ff004c33;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .gallery-item:hover {
@@ -132,6 +135,35 @@
       color: #ff004c;
       animation: neonFade 2.5s infinite ease-in-out;
     }
+
+    /* Vibes Section */
+    .vibes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .vibe-item {
+      background: #111;
+      padding: 1rem;
+      border-radius: 12px;
+      width: 360px;
+      box-shadow: 0 0 10px #00ff8833;
+      transition: all 0.3s ease;
+    }
+
+    .vibe-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #ff004c, 0 0 30px #00ff88;
+    }
+
+    iframe {
+      width: 100%;
+      height: 215px;
+      border: none;
+      border-radius: 8px;
+    }
   </style>
 </head>
 
@@ -140,8 +172,8 @@
     <h1>Big H</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#vibes">Vibes</a>
       <a href="#gallery">Gallery</a>
-      <a href="#snippets">Snippets</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -161,18 +193,36 @@
     </p>
   </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <div class="gallery-item">Cover 1</div>
-      <div class="gallery-item">Cover 2</div>
-      <div class="gallery-item">Cover 3</div>
+  <!-- Vibes Section -->
+  <section id="vibes">
+    <h2>Vibes Section</h2>
+    <div class="vibes">
+      <div class="vibe-item">
+        <iframe src="https://www.youtube.com/embed/deymr-YO9a4?si=FxWXFAAjwMYMEvV_"
+          title="Big H Snippet 1" allowfullscreen></iframe>
+      </div>
+      <div class="vibe-item">
+        <iframe src="https://www.youtube.com/embed/exyEG7b634M?si=-KTxR49eLGiwN0MW"
+          title="Big H Snippet 2" allowfullscreen></iframe>
+      </div>
+      <div class="vibe-item">
+        <iframe src="https://www.youtube.com/embed/3cABihFzuKc?si=8D5F796-qq2XTqJf"
+          title="Big H Snippet 3" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
-  <section id="snippets">
-    <h2>Snippets</h2>
-    <p>Coming soon — a taste of what’s cooking in the vault 🎧</p>
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="InShot_20250327_082128723.jpg" alt="I Watch The Moon cover">
+      </div>
+      <div class="gallery-item">
+        <img src="InShot_20250326_031327502.jpg" alt="New You cover">
+      </div>
+    </div>
   </section>
 
   <section id="contact">
