@@ -1,86 +1,83 @@
-
-<!-- Force rebuild 2025-11-08 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Big H</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: radial-gradient(circle at top, #0a0a0a, #000);
-      color: white;
-      font-family: 'Rubik', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 4rem;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-      margin-top: 10px;
-    }
-    .links {
-      margin-top: 20px;
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-      border: 1px solid #fff;
-      padding: 8px 14px;
-      border-radius: 20px;
-      transition: all 0.3s ease;
-    }
-    a:hover {
-      background: white;
-      color: black;
-    }
-    .wave {
-      display: flex;
-      align-items: flex-end;
-      height: 60px;
-      margin-top: 30px;
-    }
-    .bar {
-      width: 6px;
-      background: white;
-      margin: 0 3px;
-      animation: sound 1.2s infinite;
-    }
-    @keyframes sound {
-      0% { height: 10px; opacity: 0.8; }
-      50% { height: 60px; opacity: 1; }
-      100% { height: 10px; opacity: 0.8; }
-    }
-    .bar:nth-child(1) { animation-delay: 0s; }
-    .bar:nth-child(2) { animation-delay: 0.2s; }
-    .bar:nth-child(3) { animation-delay: 0.4s; }
-    .bar:nth-child(4) { animation-delay: 0.6s; }
-    .bar:nth-child(5) { animation-delay: 0.8s; }
-  </style>
+  <title>Big H | Angel with a Set of Horns</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b2a66b8e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Big H</h1>
-  <p>Angel with a set of horns</p>
-  <div class="links">
-    <a href="https://youtu.be/MrmwMOxJCY0?si=tM8Cu2uYv6p8G3L2" target="_blank">YouTube</a>
-    <a href="https://on.soundcloud.com/o8t4Mtk5EHRCqtezvj" target="_blank">SoundCloud</a>
-  </div>
-  <div class="wave">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
+
+  <!-- Hero -->
+  <section id="hero" class="section hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Big H</h1>
+      <p class="tagline">Angel with a Set of Horns</p>
+
+      <div class="buttons">
+        <a href="https://youtu.be/MrmwMOxJCY0?si=tM8Cu2uYv6p8G3L2" class="btn" target="_blank">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="https://on.soundcloud.com/o8t4Mtk5EHRCqtezvj" class="btn" target="_blank">
+          <i class="fab fa-soundcloud"></i> SoundCloud
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about-section">
+    <h2>About Big H</h2>
+    <p>
+      Born and brewed in South Africa, Big H is that rapper who can switch from soulful bars
+      to club heat faster than you can say “Aweh!”. His sound is a mix of grit, groove and
+      introspection — versatility in its final form. He’s got jokes, depth, and a
+      catalogue full of emotions with a side of 808s. If hip-hop had a buffet, Big H’s plate
+      would be overflowing.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Cover+1" alt="cover1">
+      <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Cover+2" alt="cover2">
+      <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Cover+3" alt="cover3">
+    </div>
+  </section>
+
+  <!-- Snippets -->
+  <section id="snippets" class="section snippets-section">
+    <h2>Snippets</h2>
+    <div class="snippet-embeds">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/MrmwMOxJCY0" title="Angel with a Set of Horns" frameborder="0" allowfullscreen></iframe>
+      <iframe width="360" height="215" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/big-h/sets/angel&color=%23131313&auto_play=false"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="section contact-section">
+    <h2>Connect with Big H</h2>
+    <div class="socials">
+      <a href="https://on.soundcloud.com/MUNKuoycB6W86V1d6" target="_blank"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://youtube.com/@biggie_071?si=6mWV-jeVx55SYCth" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@biggie.2201?_r=1&_t=ZS-91M47WP57ie" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p class="footer-note">© 2025 Big H. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+      anchor.addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
 </body>
 </html>
