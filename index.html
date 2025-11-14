@@ -1,411 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Big H — Official Page</title>
-
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biggie 2201 — Official Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #050505;
-        color: #fff;
-        text-align: center;
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
     }
 
-    /* Neon Glow Defaults */
-    .neon-green { color: #00ff99; text-shadow: 0 0 10px #00ff99; }
-    .neon-red { color: #ff0033; text-shadow: 0 0 10px #ff0033; }
-
-    .section-title {
-        font-size: 2.2rem;
-        margin-top: 60px;
-        margin-bottom: 20px;
-        color: #00ff99;
-        text-shadow: 0 0 15px #00ff99;
-    }
-
-    /* Header */
     header {
-        padding: 80px 20px;
-        background: #070707;
-        box-shadow: 0 0 25px #00ff99 inset;
-    }
-    header h1 { 
-        font-size: 3rem; 
-        color: #ff0033; 
-        text-shadow: 0 0 20px #ff0033;
-    }
-    header p {
-        color: #ccc;
-        max-width: 600px;
-        margin: 10px auto 0;
-        font-size: 1.1rem;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid rgba(0, 255, 0, 0.3);
     }
 
-    /* Vibes Section */
-    .vibes-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 20px;
-        margin-bottom: 40px;
-    }
-    iframe {
-        width: 90%;
-        max-width: 350px;
-        height: 200px;
-        border: none;
-        border-radius: 12px;
-        box-shadow: 0 0 20px #ff0033;
+    h1 {
+      font-size: 3em;
+      color: #0f0;
+      text-shadow: 0 0 15px #0f0;
     }
 
-    /* Gallery */
+    .about {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.8;
+      font-size: 1.2em;
+      border-left: 4px solid #f00;
+      border-right: 4px solid #0f0;
+    }
+
+    .wave {
+      width: 100%;
+      height: 120px;
+      background: url('https://i.imgur.com/9FjAFtV.png');
+      background-size: 200% 100%;
+      animation: waveMove 6s linear infinite;
+      opacity: 0.35;
+    }
+
+    @keyframes waveMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 200% 0; }
+    }
+
     .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 20px;
-        margin-bottom: 40px;
+      padding: 40px;
+      text-align: center;
     }
-    .gallery img {
-        width: 90%;
-        max-width: 350px;
-        border-radius: 12px;
-        box-shadow: 0 0 25px #00ff99;
+    .gallery h2 { color: #f00; text-shadow: 0 0 10px #f00; }
+
+    .gallery video {
+      width: 90%;
+      max-width: 700px;
+      margin-top: 25px;
+      border: 3px solid #0f0;
+      box-shadow: 0 0 20px #0f0;
+      border-radius: 10px;
     }
 
-    /* Downloads Section */
-    .download-list p {
-        margin: 8px 0;
-        font-size: 1.2rem;
-        color: #00ff99;
-        text-shadow: 0 0 8px #00ff99;
+    .music {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .music h2 { color: #0f0; text-shadow: 0 0 10px #0f0; }
+
+    .track {
+      margin: 25px 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .download-zone {
+      margin-top: 40px;
+      text-align: center;
     }
 
     .download-btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 25px;
-        text-decoration: none;
-        color: #00ff99;
-        font-weight: bold;
-        border: 2px solid #ff0033;
-        border-radius: 12px;
-        box-shadow: 0 0 12px #ff0033;
-        transition: 0.3s;
-    }
-    .download-btn:hover {
-        background: #ff0033;
-        color: #000;
-        box-shadow: 0 0 30px #ff0033;
-    }
-
-    /* Footer */
-    footer {
-        margin-top: 60px;
-        padding: 20px;
-        font-size: 0.9rem;
-        color: #888;
-    }
-</style>
-</head>
-<body>
-
-<header>
-    <h1>BIG H</h1>
-    <p>
-        SA-born sonic shapeshifter.  
-        Versatile hip-hop.  
-        Sometimes deep, sometimes chaotic, always vibing.  
-        I make beats your phone speakers weren’t built for.  
-    </p>
-</header>
-
-<!-- VIBES SECTION -->
-<section id="vibes">
-    <h2 class="section-title">Vibes</h2>
-
-    <div class="vibes-container">
-        <iframe src="https://www.youtube.com/embed/LPA6P_ujYv0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/kxf7i1mJ9XI" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/tNagfSf33L0" allowfullscreen></iframe>
-    </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-    <h2 class="section-title">Gallery</h2>
-
-    <div class="gallery">
-        <img src="InShot_20250327_082128723.jpg" alt="Cover 1">
-        <img src="InShot_20250326_031327502.jpg" alt="Cover 2">
-    </div>
-</section>
-
-<!-- DOWNLOAD SECTION -->
-<section id="downloads">
-    <h2 class="section-title">Downloads</h2>
-
-    <div class="download-list">
-        <p>• I Watch The Moon</p>
-        <p>• New You</p>
-        <p>• 3AM & Nowhere To Go</p>
-    </div>
-
-    <a href="musiq.zip" download class="download-btn">
-        Download All (ZIP) 🎧🔥
-    </a>
-</section>
-
-<footer>
-    © 2025 Big H — All Rights Reserved
-</footer>
-
-</body>
-</html>
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease, text-shadow 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #ff004c;
-      text-shadow: 0 0 10px #ff004c;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #00ff88;
-      text-shadow: 0 0 10px #00ff88;
-    }
-
-    p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 0 auto 2rem auto;
-      line-height: 1.8;
-    }
-
-    .glow-text {
-      color: #ff004c;
-      text-shadow: 0 0 10px #ff004c, 0 0 20px #00ff88;
-      font-weight: 700;
-    }
-
-    .socials a {
-      display: inline-block;
-      margin: 0.5rem 1rem;
-      color: #fff;
-      border: 2px solid #00ff88;
-      padding: 0.6rem 1.2rem;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-
-    .socials a:hover {
-      background: #00ff88;
+      background: #f00;
       color: #000;
-      box-shadow: 0 0 15px #ff004c, 0 0 25px #00ff88;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .gallery-item {
-      background: #111;
-      width: 280px;
-      height: 280px;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px #ff004c33;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .gallery-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #00ff88, 0 0 30px #ff004c;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 8px #0f0;
+      box-shadow: 0 0 15px #f00, 0 0 20px #0f0 inset;
     }
 
     footer {
-      background: #000;
       text-align: center;
-      padding: 1.5rem;
-      color: #888;
-      font-size: 0.9rem;
+      padding: 30px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(255, 0, 0, 0.3);
+      color: #ccc;
     }
-
-    @keyframes neonFade {
-      0% { text-shadow: 0 0 5px #00ff88; }
-      50% { text-shadow: 0 0 20px #ff004c, 0 0 30px #00ff88; }
-      100% { text-shadow: 0 0 5px #00ff88; }
-    }
-
-    .tagline {
-      font-size: 1.4rem;
-      color: #ff004c;
-      animation: neonFade 2.5s infinite ease-in-out;
-    }
-
-    .vibes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .vibe-item {
-      background: #111;
-      padding: 1rem;
-      border-radius: 12px;
-      width: 360px;
-      box-shadow: 0 0 10px #00ff8833;
-      transition: all 0.3s ease;
-    }
-
-    .vibe-item:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 25px #ff004c, 0 0 30px #00ff88;
-    }
-
-    iframe {
-      width: 100%;
-      height: 215px;
-      border: none;
-      border-radius: 8px;
-    }
-
-    /* Download Section */
-<section id="downloads" class="downloads-section">
-  <h2 class="section-title">Downloads</h2>
-
-  <div class="download-list">
-    <p>• I Watch The Moon</p>
-    <p>• New You</p>
-    <p>• 3AM & Nowhere To Go</p>
-  </div>
-
-  <a href="musiq.zip" download class="download-btn">
-    Download All 🎧🔥
-  </a>
-</section>
-
-    }
-
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Big H</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#vibes">Vibes</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#downloads">Downloads</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>BIGGIE 2201</h1>
   </header>
 
-  <section id="hero">
-    <h2 class="glow-text">Angel with a Set of Horns</h2>
-    <p class="tagline">Born to flip sounds from Kwamhlanga to the world 🌍</p>
-  </section>
+  <div class="wave"></div>
 
-  <section id="about">
-    <h2>About Big H</h2>
+  <section class="about">
     <p>
-      Born and brewed in South Africa, <span class="glow-text">Big H</span> is that rapper who can switch 
-      from soulful bars to club heat faster than you can say “Aweh!”. His sound is a mix of grit, groove and 
-      introspection — versatility in its final form. He’s got jokes, depth, and a catalogue full of emotions 
-      with a side of 808s. If hip-hop had a buffet, Big H’s plate would be overflowing.
+      Welcome to the official zone of <strong>Biggie 2201</strong> — born in South Africa,
+      raised on HipHop, fuelled by versatility, and occasionally powered by
+      slap chips & Cremora tea. My sound swings between cosmic calm and
+      midnight chaos — whatever the vibe calls for.
+    </p>
+    <p>
+      Whether you're here to float, nod your head, or question your life
+      decisions at 3am… you’re in the right place.
     </p>
   </section>
 
-  <!-- Vibes Section -->
-  <section id="vibes">
-    <h2>Vibes Section</h2>
-    <div class="vibes">
-      <div class="vibe-item">
-        <iframe src="https://www.youtube.com/embed/LPA6P_ujYv0?si=yeMu5hLLc0yLI5Vy"
-          title="Snippet 1" allowfullscreen></iframe>
-      </div>
+  <div class="wave"></div>
 
-      <div class="vibe-item">
-        <iframe src="https://www.youtube.com/embed/kxf7i1mJ9XI?si=ZcaVb8_NGH9DYpKn"
-          title="Snippet 2" allowfullscreen></iframe>
-      </div>
+  <section class="gallery">
+    <h2>VIBES & VISUALS</h2>
+    <p>Peep the visuals straight from the vault.</p>
 
-      <div class="vibe-item">
-        <iframe src="https://www.youtube.com/embed/tNagfSf33L0?si=juK2JL-lZzdvujgc"
-          title="Snippet 3" allowfullscreen></iframe>
-      </div>
+    <img src="InShot_20250327_082128723.jpg" alt="Cover 1">
+    <img src="InShot_20250326_031327502.jpg" alt="Cover 2">
+
+    <!-- Added Video Item -->
+    <div class="video-item" style="margin-top:25px; text-align:center;">
+        <video id="galleryVideo" src="2025-09-18-061326255.mp4" autoplay loop muted playsinline style="width:90%;max-width:700px;border:3px solid #f00;box-shadow:0 0 25px #f00, 0 0 25px #0f0 inset;border-radius:15px;">
+        </video>
+        <div style="margin-top:12px; display:flex; justify-content:center; gap:10px;">
+            <button id="muteToggle" class="mute-btn" style="padding:10px 25px;background:#0f0;color:#000;border:none;border-radius:6px;font-weight:bold;box-shadow:0 0 10px #0f0;">Unmute</button>
+            <button id="replayBtn" class="mute-btn" style="padding:10px 25px;background:#f00;color:#000;border:none;border-radius:6px;font-weight:bold;box-shadow:0 0 10px #f00;">Replay</button>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Downloads Section -->
-  <section id="downloads">
-    <h2>Downloads</h2>
-    <div class="downloads">
-      <div class="download-track">
-        <h3>I Watch The Moon</h3>
-        <a href="I watch the moon.mp3" download class="download-btn">Save the Vibe 🎧</a>
-      </div>
+  <div class="wave"></div>
 
-      <div class="download-track">
-        <h3>New You</h3>
-        <a href="New You.mp3" download class="download-btn">Save the Vibe 🎧</a>
-      </div>
+  <section class="music">
+    <h2>TRACKS</h2>
 
-      <div class="download-track">
-        <h3>3AM & Nowhere To Go</h3>
-        <a href="3am-and-nowhere-to-go.mp3" download class="download-btn">Download</a>
-    </div>
-  </section>
+    <div class="track">I Watch The Moon</div>
+    <div class="track">New You</div>
+    <div class="track">3am & Nowhere To Go</div>
 
-  <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="InShot_20250327_082128723.jpg" alt="I Watch The Moon cover">
-      </div>
-      <div class="gallery-item">
-        <img src="InShot_20250326_031327502.jpg" alt="New You cover">
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Connect</h2>
-    <div class="socials">
-      <a href="https://on.soundcloud.com/MUNKuoycB6W86V1d6" target="_blank">SoundCloud</a>
-      <a href="https://www.tiktok.com/@biggie.2201?_r=1&_t=ZS-91M47WP57ie" target="_blank">TikTok</a>
-      <a href="https://youtube.com/@biggie_071?si=6mWV-jeVx55SYCth" target="_blank">YouTube</a>
+    <div class="download-zone">
+      <a class="download-btn" href="musiq.zip" download>
+        Download Full Pack (ZIP)
+      </a>
     </div>
   </section>
 
   <footer>
-    © 2025 Big H — Angel with a Set of Horns 🕶️
+    <p>© 2025 Biggie 2201 — Built with chaos & creativity.</p>
   </footer>
+
+<script>
+  const video = document.getElementById('galleryVideo');
+  const toggle = document.getElementById('muteToggle');
+  const replay = document.getElementById('replayBtn');
+
+  toggle.addEventListener('click', () => {
+    video.muted = !video.muted;
+    toggle.textContent = video.muted ? 'Unmute' : 'Mute';
+  });
+
+  replay.addEventListener('click', () => {
+    video.currentTime = 0;
+    video.play();
+  });
+</script>
 </body>
 </html>
