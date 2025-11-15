@@ -1,210 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musiq</title>
-
-  <style>
-    body {
-      background: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      padding: 30px 0;
-      text-align: center;
-      font-size: 32px;
-      font-weight: bold;
-    }
-
-    h2 {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    /* TRACK SECTION */
-    .track-list {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-
-    .track {
-      background: #1a1a1a;
-      padding: 18px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .track-title {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .yt-link {
-      display: inline-block;
-      margin-top: 5px;
-      color: #00ff6a;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .download-zone {
-      text-align: center;
-      margin-top: 25px;
-    }
-
-    .download-btn {
-      padding: 12px 22px;
-      background: #fff;
-      color: #000;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    /* GALLERY */
-    #gallery {
-      padding: 20px;
-      max-width: 950px;
-      margin: auto;
-    }
-
-    .gallery-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    /* BIG VIDEO */
-    .gallery-video {
-      width: 100%;
-      border-radius: 15px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    .gallery-video video {
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-    }
-
-    .mute-btn {
-      position: absolute;
-      bottom: 12px;
-      right: 12px;
-      background: rgba(0,0,0,0.7);
-      border: none;
-      padding: 8px 14px;
-      color: #fff;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    /* IMAGE GRID */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 15px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
-
-    @media (max-width: 600px) {
-      .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .gallery-video video {
-        height: 260px;
-      }
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 0;
-      color: #999;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIQ Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header>Musiq</header>
+    <!-- HEADER -->
+    <header>
+        <h1>MUSIQ</h1>
+    </header>
 
-  <h2>Tracks</h2>
 
-  <div class="track-list">
-    <div class="track">
-      <div class="track-title">I Watch The Moon</div>
-      <a href="https://youtu.be/LPA6P_ujYv0?si=yeMu5hLLc0yLI5Vy" class="yt-link">► Listen on YouTube</a>
-    </div>
+    <!-- VIDEO SECTION -->
+    <section id="video">
+        <h2 class="section-title">Featured Video</h2>
 
-    <div class="track">
-      <div class="track-title">New You</div>
-      <a href="https://youtu.be/kxf7i1mJ9XI?si=ZcaVb8_NGH9DYpKn" class="yt-link">► Listen on YouTube</a>
-    </div>
+        <div class="video-container">
+            <video id="mainVideo" playsinline autoplay loop muted>
+                <source src="2025-09-18-061326255.mp4" type="video/mp4">
+            </video>
 
-    <div class="track">
-      <div class="track-title">3AM & Nowhere To Go</div>
-      <a href="https://youtu.be/tNagfSf33L0?si=juK2JL-lZzdvujgc" class="yt-link">► Listen on YouTube</a>
-    </div>
+            <div class="video-controls">
+                <button onclick="toggleMute()">Mute / Unmute</button>
+            </div>
+        </div>
+    </section>
 
-    <div class="download-zone">
-      <a href="musiq.zip" download class="download-btn">↓ Download All Tracks (ZIP)</a>
-    </div>
-  </div>
 
-  <h2>Gallery</h2>
+    <!-- IMAGE GALLERY -->
+    <section id="gallery">
+        <h2 class="section-title">Gallery</h2>
 
-  <section id="gallery">
-    <div class="gallery-wrapper">
+        <div class="gallery">
+            <img src="InShot_20250327_082128723.jpg" alt="Cover 1">
+            <img src="InShot_20250326_031327502.jpg" alt="Cover 2">
+        </div>
+    </section>
 
-      <!-- VIDEO -->
-      <div class="gallery-video">
-        <video id="galleryVideo" autoplay loop muted playsinline>
-          <source src="2025-09-18-061326255.mp4" type="video/mp4">
-        </video>
-        <button id="muteToggle" class="mute-btn">Unmute</button>
-      </div>
 
-      <!-- IMAGES -->
-      <div class="gallery-grid">
-        <img src="InShot_20250327_082128723.jpg" alt="Cover 1">
-        <img src="InShot_20250326_031327502.jpg" alt="Cover 2">
-      </div>
+    <!-- DOWNLOAD ZIP -->
+    <section id="download">
+        <h2 class="section-title">Downloads</h2>
 
-    </div>
-  </section>
+        <div class="download-box">
+            <a href="musiq.zip" download>Download Full Music Pack (ZIP)</a>
+        </div>
+    </section>
 
-  <footer>
-    © 2025 Biggie-H. All rights reserved.
-  </footer>
 
-  <script>
-    const vid = document.getElementById("galleryVideo");
-    const btn = document.getElementById("muteToggle");
-
-    btn.onclick = () => {
-      vid.muted = !vid.muted;
-      btn.textContent = vid.muted ? "Unmute" : "Mute";
-    };
-  </script>
+    <!-- JS -->
+    <script>
+        function toggleMute() {
+            const vid = document.getElementById("mainVideo");
+            vid.muted = !vid.muted;
+        }
+    </script>
 
 </body>
 </html>
