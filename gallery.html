@@ -1,39 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Big H — Gallery</title>
-  <link href="styles.css" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Gallery — Big H</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="dark">
-  <header class="site-header">
-    <div class="logo">BIG H</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="snippets.html">Snippets</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="links.html">Links</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<body>
 
-  <main class="container">
-    <h2 class="page-title">Gallery & Videos</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-        <div class="caption">Lyric Visual — demo</div>
-      </div>
-      <div class="video-card">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/DLX62G4lc44" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-        <div class="caption">Live Performance — demo</div>
-      </div>
+<header class="header-bar">
+  <h1>Big H</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="vibes.html">Vibes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Gallery</h2>
+  <p class="tagline">Visuals, behind-the-scenes, and the full vibe.</p>
+</section>
+
+<section>
+  <div class="gallery">
+    <video id="mainVideo" controls>
+      <source src="2025-09-18-061326255.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button class="mute-btn" id="muteToggle">Unmute</button>
+
+    <div class="gallery-row" style="margin-top:18px;">
+      <div class="gallery-item"><img src="InShot_20250327_082128723.jpg" alt="Cover 1"></div>
+      <div class="gallery-item"><img src="InShot_20250326_031327502.jpg" alt="Cover 2"></div>
     </div>
-  </main>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div>© BIG H</div>
-  </footer>
+<script>
+  const vid = document.getElementById('mainVideo');
+  const muteToggle = document.getElementById('muteToggle');
+  muteToggle.addEventListener('click', () => {
+    vid.muted = !vid.muted;
+    muteToggle.textContent = vid.muted ? 'Unmute' : 'Mute';
+  });
+</script>
+
+<footer>
+  © 2025 Big H — Angel with a Set of Horns
+</footer>
+
 </body>
 </html>
