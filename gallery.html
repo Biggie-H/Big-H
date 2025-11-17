@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Gallery — Big H</title>
-<link rel="stylesheet" href="styles.css" />
+  <title>Gallery — Biggie 2201</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header-bar">
-  <h1>Big H</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="vibes.html">Vibes</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="downloads.html">Downloads</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header>
+  <h1>VIBES & VISUALS</h1>
 </header>
 
-<section class="hero">
-  <h2>Gallery</h2>
-  <p class="tagline">Visuals, behind-the-scenes, and the full vibe.</p>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="music.html">Music</a>
+  <a href="download.html">Downloads</a>
+</nav>
+
+<div class="wave"></div>
+
+<section class="section">
+  <video controls>
+    <source src="2025-09-18-061326255.mp4" type="video/mp4">
+  </video>
+
+  <br><br>
+
+  <img class="gallery-img" src="InShot_20250327_082128723.jpg">
+  <img class="gallery-img" src="InShot_20250326_031327502.jpg">
 </section>
 
-<section>
-  <div class="gallery">
-    <video id="mainVideo" controls>
-      <source src="2025-09-18-061326255.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <button class="mute-btn" id="muteToggle">Unmute</button>
+<div class="wave"></div>
 
-    <div class="gallery-row" style="margin-top:18px;">
-      <div class="gallery-item"><img src="InShot_20250327_082128723.jpg" alt="Cover 1"></div>
-      <div class="gallery-item"><img src="InShot_20250326_031327502.jpg" alt="Cover 2"></div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const vid = document.getElementById('mainVideo');
-  const muteToggle = document.getElementById('muteToggle');
-  muteToggle.addEventListener('click', () => {
-    vid.muted = !vid.muted;
-    muteToggle.textContent = vid.muted ? 'Unmute' : 'Mute';
-  });
-</script>
-
-<footer>
-  © 2025 Big H — Angel with a Set of Horns
-</footer>
+<footer>© 2025 Biggie 2201</footer>
 
 </body>
 </html>
