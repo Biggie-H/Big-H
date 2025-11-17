@@ -1,109 +1,127 @@
-/* GLOBAL */
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
-  background: #000;
-  color: #fff;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #000 0%, #0a0a0a 50%, #111 100%);
+  color: #f1f1f1;
+  overflow-x: hidden;
 }
 
+/* HEADER + NAV */
 header {
-  padding: 25px;
-  text-align: center;
-  border-bottom: 2px solid rgba(0, 255, 0, 0.3);
-}
-
-h1 {
-  font-size: 3em;
-  color: #0f0;
-  text-shadow: 0 0 12px #0f0;
-}
-
-/* NAV BAR */
-nav {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 15px;
-  background: rgba(20, 20, 20, 0.8);
-  border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88, 0 0 20px #ff004c;
 }
 
 nav a {
-  color: #0f0;
+  color: #fff;
+  margin: 0 1rem;
   text-decoration: none;
-  font-weight: bold;
-  text-shadow: 0 0 8px #0f0;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-  color: #f00;
-  text-shadow: 0 0 10px #f00;
+  color: #ff004c;
+  text-shadow: 0 0 10px #ff004c;
+}
+
+/* TITLES */
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
 }
 
 /* SECTIONS */
-.section {
-  max-width: 950px;
-  margin: 50px auto;
-  padding: 20px;
+section {
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-/* WAVE */
-.wave {
-  width: 100%;
-  height: 120px;
-  background: url('https://i.imgur.com/9FjAFtV.png');
-  background-size: 200% 100%;
-  animation: waveMove 6s linear infinite;
-  opacity: 0.33;
+/* BUTTONS */
+.download-btn,
+.wave-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #00ff88;
+  border-radius: 25px;
+  color: #00ff88;
+  background: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-@keyframes waveMove {
-  to { background-position: 200% 0; }
+
+.download-btn:hover,
+.wave-btn:hover {
+  background: #00ff88;
+  color: #000;
+  border-color: #ff004c;
+  box-shadow: 0 0 20px #00ff88, 0 0 25px #ff004c;
 }
 
 /* VIDEO */
 video {
-  width: 92%;
-  max-width: 850px;
-  border: 3px solid #0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #0f0;
-  margin-top: 25px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #ff004c55;
 }
 
-/* IMAGES */
-.gallery-img {
-  width: 92%;
-  max-width: 500px;
-  margin: 20px;
-  border-radius: 10px;
-  border: 2px solid #f00;
-  box-shadow: 0 0 20px #f00;
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* MUSIC TRACK LIST */
-.track {
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 1.2em;
+.gallery-item {
+  background: #111;
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #ff004c33;
 }
 
-/* DOWNLOAD BUTTON */
-.download-btn {
-  background: #f00;
-  color: #000;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 0 12px #f00, 0 0 15px #0f0 inset;
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff88, 0 0 30px #ff004c;
 }
 
 /* FOOTER */
 footer {
+  background: #000;
   text-align: center;
-  padding: 40px;
-  margin-top: 40px;
-  border-top: 2px solid rgba(255, 0, 0, 0.3);
-  color: #aaa;
+  padding: 1.5rem;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
