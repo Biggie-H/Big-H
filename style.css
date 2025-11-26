@@ -125,3 +125,18 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
+/* Make images and video equal size */
+.gallery-media {
+  width: 350px;      /* Adjust to whatever size you want */
+  height: 350px;     /* Forces equal height */
+  object-fit: cover; /* Crops nicely without distortion */
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Optional: Keep layout centered */
+.section {
+  text-align: center;
+}
