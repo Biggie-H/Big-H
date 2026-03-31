@@ -2,198 +2,103 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: #0a0a0a;
-  color: white;
-}
-
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
   background: black;
-  position: sticky;
-  top: 0;
+  color: white;
+  overflow-x: hidden;
 }
 
-nav a {
-  margin-left: 20px;
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('images/bg.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+  font-size: 80px;
+  z-index: 1;
+  letter-spacing: 5px;
+}
+
+.hero p {
+  z-index: 1;
+  margin: 10px 0;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.cta {
+  z-index: 1;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid white;
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
 
-nav a:hover {
-  color: #00ffcc;
-}
-
-/* HERO */
-.hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url('images/bg.jpg') center/cover;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 50px;
-}
-
-.hero p {
-  margin: 10px 0;
-}
-
-.btn {
-  padding: 10px 20px;
-  background: #00ffcc;
+.cta:hover {
+  background: white;
   color: black;
-  text-decoration: none;
-  margin-top: 10px;
 }
 
-/* SECTIONS */
-section {
-  padding: 60px 20px;
+/* MUSIC */
+.music-section {
+  padding: 80px 20px;
   text-align: center;
 }
 
-/* VIDEOS GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.music-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
-video {
+.card {
+  max-width: 500px;
+  margin: auto;
+}
+
+.card video {
   width: 100%;
   border-radius: 10px;
 }
 
-/* MUSIC */
-.music {
-  margin: 20px 0;
+/* VIDEOS */
+.videos {
+  padding: 80px 20px;
 }
 
-.music a {
-  color: #00ffcc;
-  text-decoration: none;
-}
-
-/* FOOTER */
-footer {
-  background: black;
-  padding: 20px;
-  text-align: center;
-}}
-
-nav a:hover {
-  color: #ff004c;
-  text-shadow: 0 0 10px #ff004c;
-}
-
-/* TITLES */
-h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #00ff88;
-  text-shadow: 0 0 10px #00ff88;
-}
-
-/* SECTIONS */
-section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-/* BUTTONS */
-.download-btn,
-.wave-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.4rem;
-  border: 2px solid #00ff88;
-  border-radius: 25px;
-  color: #00ff88;
-  background: transparent;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.download-btn:hover,
-.wave-btn:hover {
-  background: #00ff88;
-  color: #000;
-  border-color: #ff004c;
-  box-shadow: 0 0 20px #00ff88, 0 0 25px #ff004c;
-}
-
-/* VIDEO */
-video {
-  width: 90%;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #ff004c55;
-}
-
-/* GALLERY */
-.gallery {
+.video-row {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
 }
 
-.gallery-item {
-  background: #111;
-  width: 280px;
-  height: 280px;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 10px #ff004c33;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00ff88, 0 0 30px #ff004c;
+.video-row video {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
-  background: #000;
   text-align: center;
-  padding: 1.5rem;
-  color: #888;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-}
-
-/* Make images and video equal size */
-.gallery-media {
-  width: 350px;      /* Adjust to whatever size you want */
-  height: 350px;     /* Forces equal height */
-  object-fit: cover; /* Crops nicely without distortion */
-  border-radius: 8px;
-  display: block;
-  margin: 10px auto;
-}
-
-/* Optional: Keep layout centered */
-.section {
-  text-align: center;
+  padding: 20px;
+  background: #111;
 }
