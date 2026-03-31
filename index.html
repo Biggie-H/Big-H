@@ -4,42 +4,64 @@
   <meta charset="UTF-8">
   <title>BIGGIE 2201</title>
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
-  <h1>BIGGIE 2201</h1>
-  <p>NO PRESSURE.</p>
-  <a href="#music" class="cta">ENTER</a>
-</section>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h1>2201</h1>
+  <a href="#">Home</a>
+  <a href="#music">Music</a>
+  <a href="#videos">Videos</a>
+</div>
 
-<!-- MUSIC -->
-<section id="music" class="music-section">
-  <h2>LATEST DROP</h2>
+<!-- MAIN -->
+<div class="main">
 
-  <div class="card">
-    <video controls src="videos/pressure.mp4"></video>
-    <h3>PRESSURE</h3>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <h2>BIGGIE 2201</h2>
+    <p>Stream. Download. Vibe.</p>
+  </section>
 
-<!-- VIDEOS -->
-<section class="videos">
-  <h2>VISUALS</h2>
+  <!-- MUSIC PLAYER -->
+  <section id="music">
+    <h2>Latest Tracks</h2>
 
-  <div class="video-row">
-    <video controls src="videos/video1.mp4"></video>
-    <video controls src="videos/video2.mp4"></video>
-  </div>
-</section>
+    <div class="track">
+      <img src="images/cover.jpg">
+      
+      <div class="track-info">
+        <h3>Pressure</h3>
 
-<!-- FOOTER -->
-<footer>
-  <p>© BIGGIE 2201</p>
-</footer>
+        <audio controls>
+          <source src="music/pressure.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="links">
+          <a href="#">Spotify</a>
+          <a href="#">Apple</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos">
+    <h2>Visuals</h2>
+
+    <div class="video-grid">
+      <video controls src="videos/video1.mp4"></video>
+      <video controls src="videos/video2.mp4"></video>
+    </div>
+  </section>
+
+</div>
 
 </body>
 </html>
