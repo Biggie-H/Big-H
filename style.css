@@ -67,9 +67,20 @@ body {
 }
 
 .links a {
-  margin-right: 15px;
-  color: #1db954;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #1a1a1a;
+  color: white;
   text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #1db954;
+  color: black;
 }
 
 /* VIDEOS */
