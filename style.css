@@ -6,35 +6,97 @@
 }
 
 body {
-  display: flex;
-  background: #0b0b0b;
+  background: linear-gradient(180deg, #000000, #111111);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* SIDEBAR */
-.sidebar {
-  width: 200px;
-  height: 100vh;
-  background: black;
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
   padding: 20px;
-  position: fixed;
 }
 
-.sidebar h1 {
+/* PROFILE */
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile h1 {
+  font-size: 26px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+/* FEATURED TRACK */
+.featured {
   margin-bottom: 30px;
 }
 
-.sidebar a {
-  display: block;
-  margin: 15px 0;
-  text-decoration: none;
-  color: #aaa;
+.featured img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
-.sidebar a:hover {
+.featured h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.play {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #ff5500;
   color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
+.play:hover {
+  transform: scale(1.05);
+}
+
+/* LINKS */
+.links a {
+  display: block;
+  background: #1a1a1a;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #00ffcc;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}
 /* MAIN */
 .main {
   margin-left: 200px;
