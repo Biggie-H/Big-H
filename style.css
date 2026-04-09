@@ -166,3 +166,36 @@ video {
   width: 100%;
   border-radius: 10px;
 }
+
+/* DOWNLOAD SECTION */
+.download-section {
+  margin: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #ff4b2b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.download-btn:hover {
+  background: #ff3a1a;
+}
+
+/* TRACK ART */
+.track-art {
+  margin-top: 20px;
+}
+
+.track-art img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
